@@ -1,0 +1,28 @@
+Test Cases for Battleship
+Name: Logan Edwards
+Date: February 16, 2026
+Report: Test cases for battleship
+Req: The solution must support missiles launched by the user
+•	A) The solution must initiate a missile launch when the user clicks the right mouse button
+o	Happy Path
+	Pre: User input is mapped to right mouse button on initialization, no more than 5 missiles are on screen
+	Action: User presses the right mouse to launch missile
+	Post: A missile is successfully launched
+o	Un-Happy Path
+	Pre: User input is mapped to right mouse button on initialization, no more than 5 missiles are on screen
+	Action: User presses the right mouse to launch missile
+	Post: No missile is launched, no successful mapping to right mouse button
+•	B) The solution must initiate a missile launch when the user clicks the space bar.
+o	Happy Path
+	Pre: Game is actively running, user input is pre-mapped to space button to have input, no more than 5 missiles are on screen 
+	Action: User presses the space button to launch missile
+	Post: A missile is successfully launched
+o	Un-Happy Path
+	Pre: 
+	Action: 
+	Post: 
+•	C) The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+o	Happy Path
+	Pre: A counter is initialized on startup to track how many missiles are launched. When the user inputs a right mouse or space key counter goes up, when a missile exceeds grid value a counter is removed.
+	Action: A missile is launched from user input.
+	Post: A missile is launched if the counter is 4 or less.
